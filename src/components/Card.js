@@ -36,14 +36,14 @@ function Card() {
   data.map((item,index)=>{
       return(
 
-          <div className='w-[350px] h-[150px] shadow-lg rounded-lg  text-center  capitalize  ' key={index}>
+          <div className='w-[350px] h-[130px] shadow-lg rounded-lg  text-center  capitalize  ' key={index}>
              
 
               <div className='w-full'>
-                  <p className='font-bold mt-4' key={item.data.author}>{item.data.author}</p>
-                  <p  key={item.data.score}>score : {item.data.score}</p>
+                  <p className='font-bold mt-4 bg-gray-500 text-white ' key={item.data.author}>Author  :  {item.data.author}</p>
+                  <p  key={item.data.score} className="mt-1">score : {item.data.score}</p>
                  
-                  <a className='text-blue-500' href={item.data.url} key={item.data.url}> Click here to know more  </a>
+                  <a className='text-blue-500' href={item.data.url} key={item.data.url}> Author Url  </a>
                   </div>
 
           </div>
